@@ -10,37 +10,49 @@
 </head>
 
 <body>
-    <div class="buttons">
+    <div class="buttons" id="main">
         <img class="button" onclick="naver()"
             src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160504_295%2Fzzlidde_1462360339348GT0M2_PNG%2F2016-05-04_20.11.40.png&type=a340"
             style="width: 220px; height: 220px;">
+            <h2>Naver</h2>
 
         <br>
+        <hr>
         <br>
 
         <img class="button" onclick="dodam()" src="http://dodam.b1nd.com/static/media/bindLogo.b011c301.png"
             style="width: 220px; height: 220px;">
+            <h2>Dodam'Dodam</h2>
         <br>
+        <hr>
         <br>
 
         <img class="button" onclick="github()"
             src="data:image/png;base64,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"
-            style="width: 280px; height: 220px;">
+            style="width: 380px; height: 220px;">
+            <h2>GitHub</h2>
 
         <br>
+        <hr>
         <br>
--------
+
         <img class="button" onclick="codeup()"
             src="data:image/png;base64,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"
-            style="width: 220px; height: 220px;">
+            style="width: 420px; height: 220px;">
+            <h2>CodeUp</h2>
 
         <br>
+        <hr>
         <br>
     </div>
 </body>
 
 
 <script>
+    //글씨의 색을 흰색으로 변경
+    function white() {
+        document.getElementById("main").style.color = "white";
+    }
 
     function naver() {
         window.open("https://naver.com", "네이버", "width=1300, height=1300");
@@ -57,6 +69,7 @@
     function codeup() {
         window.open("https://codeup.kr/", "코드업", "width=1300, height=1300");
     }
+
 </script>
 
 </html>
