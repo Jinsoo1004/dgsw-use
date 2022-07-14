@@ -1,3 +1,10 @@
+body {
+    background-color: #292929;
+    /* 글씨를 흰색으로 변경 */
+    color: #fff;
+}
+
+
 .buttons {
     cursor: pointer;
 
